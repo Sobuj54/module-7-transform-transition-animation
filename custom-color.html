@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom color</title>
+    <style>
+      /* with this root and variables we can change whole color of the styles */
+      :root {
+        --primary-color: red;
+        --secondary-color: blue;
+      }
+      .custom {
+        color: var(--primary-color);
+      }
+      #ids-3 {
+        color: var(--primary-color);
+      }
+      #ids-2,
+      #ids-1 {
+        color: var(--secondary-color);
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="custom">coloring-1</h2>
+    <h2 class="custom">coloring-2</h2>
+    <h2 class="custom">coloring-3</h2>
+    <h2 class="custom">coloring-4</h2>
+    <h2 class="custom">coloring-5</h2>
+    <div class="second" id="ids-1">
+      <p class="nithin">nothing-1</p>
+    </div>
+    <div class="second" id="ids-2">
+      <p class="nithin">nothing-2</p>
+    </div>
+    <div class="second" id="ids-3">
+      <p class="nithin">nothing-3</p>
+    </div>
+  </body>
+</html>
